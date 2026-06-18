@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h1>Feedback Nexus</h1>
+  <p><strong>Product Discovery & Prioritization Engine</strong></p>
+</div>
 
-## Getting Started
+<br />
 
-First, run the development server:
+## 📖 Overview
+Feedback Nexus is a tool designed to ingest customer feedback from various sources (Zendesk, Intercom, App Store) and use AI to automatically group them into feature requests. It assigns priority scores based on MRR impact and volume to help Product Managers make data-driven roadmap decisions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 Local Development
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow these instructions to run the project locally on your machine. We ensure no security data is exposed by using an example environment file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ installed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Setup Steps
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mvahedi2020/Feedback-Nexus.git
+   cd "Feedback Nexus"
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Environment Setup:**
+   Copy the example environment file to create your local environment variables. Never commit your `.env.local` file!
+   ```bash
+   cp .env.example .env.local
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **View the Application:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Features
+- AI-Driven Feedback Categorization
+- MRR Impact Scoring
+- Customer Request Volume Tracking
+- Direct Integration Mockups
