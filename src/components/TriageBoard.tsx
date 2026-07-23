@@ -14,10 +14,12 @@ interface Feedback {
 }
 
 const initialFeedback: Feedback[] = [
-  { id: 1, text: "The new dashboard is too slow when loading 10k rows.", source: "Zendesk", priority: "High", tags: ["Performance", "Enterprise"], status: "pending" },
-  { id: 2, text: "Can we get a dark mode for the mobile app?", source: "App Store", priority: "Low", tags: ["UI/UX", "Feature Request"], status: "pending" },
-  { id: 3, text: "SSO integration with Okta is failing since the update.", source: "Intercom", priority: "High", tags: ["Security", "Bug"], status: "pending" },
-  { id: 4, text: "Need a way to export reports to PDF.", source: "Email", priority: "Medium", tags: ["Feature", "Reporting"], status: "pending" },
+  { id: 1, text: "Users are experiencing a 3-second latency during the checkout flow after the v2.4 rollout.", source: "Datadog", priority: "High", tags: ["Performance", "Critical Path"], status: "pending" },
+  { id: 2, text: "Enterprise clients are requesting SAML/SSO integration to comply with their internal security audits.", source: "Salesforce", priority: "High", tags: ["Security", "Enterprise"], status: "pending" },
+  { id: 3, text: "The new analytics dashboard lacks CSV export functionality, blocking end-of-month reporting.", source: "Zendesk", priority: "Medium", tags: ["Feature Gap", "Reporting"], status: "pending" },
+  { id: 4, text: "Onboarding drop-off increased by 15% on step 3. The 'Connect Wallet' button is confusing.", source: "Mixpanel", priority: "High", tags: ["UX/UI", "Conversion"], status: "pending" },
+  { id: 5, text: "Can we add custom webhooks for ticket status changes? It would help automate our workflows.", source: "Dev Portal", priority: "Low", tags: ["API", "Feature Request"], status: "pending" },
+  { id: 6, text: "Bug in the payment gateway: Stripe webhooks are occasionally failing to update subscription statuses.", source: "Intercom", priority: "High", tags: ["Bug", "Billing"], status: "pending" }
 ];
 
 export default function TriageBoard() {
