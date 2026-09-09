@@ -4,3 +4,8 @@ test-results/
 playwright-report/
 .DS_Store
 docs/media/page@*.webm
+.env
+.env.*
+!.env.example
+.next/
+.vercel/
