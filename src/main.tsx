@@ -4,6 +4,8 @@ import {seed,score,merge,groupAccounts,csv,states,type Feedback,type Status} fro
 import {useFeedback} from './storage';
 import './style.css';
 import './accessibility.css';
+const disabledHint=(button:HTMLButtonElement)=>{if(button.textContent?.includes('Group selected'))button.title='Select two or more feedback signals to group them.';if(button.textContent?.trim()==='Undo')button.title='There is no saved change to undo yet.';};
+new MutationObserver(()=>document.querySelectorAll<HTMLButtonElement>('button:disabled').forEach(disabledHint)).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['disabled']});
 const repo='https://github.com/mvahedi2020/Feedback-Nexus';
 function App(){
 const {items,save,warning}=useFeedback();const [previous,setPrevious]=useState<Feedback[]|null>(null);const [notice,setNotice]=useState('');const [search,setSearch]=useState('');const [segment,setSegment]=useState('All');const [status,setStatus]=useState('All');const [selected,setSelected]=useState<string[]>([]);const [detail,setDetail]=useState('F01');const [view,setView]=useState(location.hash.slice(1)||'inbox');const [adding,setAdding]=useState(false);const [resetting,setResetting]=useState(false);

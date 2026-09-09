@@ -35,4 +35,5 @@ All accounts and feedback are fictional. Tags are simulated; no model or externa
 - [Commercial hypotheses](docs/product/GTM_Strategy.md)
 - [Implemented / next / later](docs/product/Sprint_Backlog.md)
 - [Prototype validation](docs/product/Validation.md)
+- [Exhaustive interaction and recovery matrix](docs/product/Control_Matrix.md)
 - [Contributor setup](CONTRIBUTING.md)
