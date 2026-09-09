@@ -1,0 +1,2 @@
+footer a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.side-note{display:block;margin:0;padding:8px 12px;width:100%;font-size:10px}.side-note p{display:none}.side-note .text-button{float:right;font-size:11px}}

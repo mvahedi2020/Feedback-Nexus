@@ -1,0 +1,20 @@
+{
+  "url": "https://mvahedi2020.github.io/Feedback-Nexus/",
+  "passed": true,
+  "scenarios": [
+    "load",
+    "search",
+    "group preserves originals",
+    "tag review",
+    "decision",
+    "persistence",
+    "export",
+    "undo",
+    "navigation",
+    "submission",
+    "reset",
+    "mobile no overflow",
+    "storage unavailable"
+  ],
+  "errors": []
+}

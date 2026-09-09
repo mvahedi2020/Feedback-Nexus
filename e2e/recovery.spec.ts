@@ -1,0 +1,2 @@
+import {test,expect} from '@playwright/test';
+test('incomplete saved records show a warning and usable fixtures',async({page})=>{await page.addInitScript(()=>localStorage.setItem('mo-feedback-nexus-v1',JSON.stringify([{id:'F1',title:'x',accounts:[],status:'Inbox',effort:1,quote:'q'}])));await page.goto('./');await expect(page.getByRole('status')).toContainText('incompatible');await expect(page.locator('.feedback')).toHaveCount(6);});
