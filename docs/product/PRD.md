@@ -18,7 +18,7 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 
 1. Find relevant signals by customer words, account name, segment, or current planning state.
 2. Compare related signals without deleting their original quotes or inflating the affected-account count.
-3. Review a simulated tag suggestion before using it in a decision.
+3. Inspect a simulated tag suggestion when it would help; accepting or correcting it is optional and does not block recording a planning decision.
 4. Adjust visible impact, confidence, and effort inputs; explain the choice; then record a planning state.
 5. Recover from an error with Undo, retain work after refresh where browser storage is available, or export the resulting shortlist.
 
@@ -27,7 +27,7 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 - Combined search matches title, customer words and account names; segment and status filters combine.
 - Manual feedback requires nonblank title, quote and account.
 - Grouping two or more signals preserves every quote and shows unique affected accounts.
-- Tags are simulated suggestions. Corrections persist and require explicit review.
+- Tags are simulated suggestions. A reviewer may accept or correct a tag explicitly, or record a Planned decision with the suggested tag still unreviewed and explain why in the rationale.
 - Impact, confidence and effort update the score; effort cannot be zero or negative.
 - Rationale and status persist. Planned signals appear in the shortlist and its CSV.
 - Undo restores the last change; reset restores fixtures; refresh retains changes when storage works.
@@ -43,3 +43,9 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 | Evidence retention | Original signals retained / selected signals | 100% | No duplicate-account inflation |
 
 Small samples and subjective confidence can mislead. Real customer data would need explicit access and retention decisions before integration.
+
+## Concrete Northstar acceptance examples
+
+In the fictional weekly review, a PM searches **“import”**, selects F01 and F02, and groups them. The result must retain both customer quotes, show two distinct Northstar accounts, and leave the original records available for inspection. The PM can set impact to 4, confidence to 3, and effort to 2; the visible score changes from those inputs rather than from a hidden rule. They may move the group to **Planned** with a rationale such as “Unblocks first-value recovery for two accounts,” even if they leave its simulated **Onboarding** tag unreviewed. The tag is supporting context, not a required gate.
+
+A separate saved-report signal can remain **Exploring** when its evidence is thinner. Changing a status without rationale must not create an unexplained committed decision. A refresh retains the confirmed local sample state where browser storage is available; Undo returns the most recent change; Reset restores the fictional fixtures only after its confirmation flow. Exported CSV includes the resulting Planned shortlist and never contacts Northstar customers. These examples define prototype behavior, not a release promise or observed user result.
