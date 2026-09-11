@@ -1,9 +1,9 @@
 # Commercial hypotheses
 
-The proposed audience is B2B SaaS PMs and product operations leads reviewing feedback weekly. Validate this with five target users before distribution or billing.
+Feedback Nexus has two hypothetical audiences with different reasons to care. The **user** is a B2B SaaS PM or product-operations lead who must turn scattered feedback into a planning recommendation. The **buyer**, if a real product earned investment, may be a product leader responsible for consistent prioritization across a team. The user needs preserved quotes, accounts, and an explainable choice; the buyer would need confidence that the workflow produces a reviewable record without adding unmanageable process. Neither audience has been interviewed for this sample.
 
-An initial packaging hypothesis is free submission and paid reviewer seats. An illustrative $20–40 monthly reviewer range requires willingness-to-pay interviews and competitor research; it is not a launched price.
+Two packaging directions are worth comparing only after discovery. One could be a free individual evidence workspace with paid reviewer seats or shared governance features. Another could be an internal enablement tool bundled with existing research operations, where the buyer values traceability rather than a standalone subscription. An illustrative $20–40 monthly reviewer range is a prompt for willingness-to-pay work and competitor research, not a price, offer, or revenue forecast.
 
-First experiment: a consented prototype exercise in a PM community. Measure qualified participants completing the task divided by those agreeing to try it; proposed threshold 50%. Guardrail: no unsolicited messaging or fictional testimonials.
+A hypothetical first adoption test is an opt-in, consented exercise with five target users using the fictional Northstar import-recovery task. Activation would mean completing the evidence-to-decision workflow and accurately explaining the score and simulated tag boundary. The proposed learning threshold is four of five completing the task without a critical misunderstanding; it does not establish retention or demand. No outreach, waitlist, partner, marketplace listing, conversion, adoption, or revenue result is claimed.
 
-Investment requires repeated problem evidence, comprehension of scoring, and a reason this beats a spreadsheet or existing discovery tool. No waitlist, partners, marketplace approval or revenue is claimed.
+Further investment needs repeated problem evidence, a comparison against current spreadsheet or discovery-tool workflows, and a reason a purchaser would fund shared controls. Privacy, access, retention, collaboration, integrations, and any live assistance require their own validated requirements first.
