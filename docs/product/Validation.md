@@ -18,3 +18,11 @@ The screenshot and workflow recording in ../media show the actual running protot
 ## Latest implementation check
 
 After the editorial evidence-board update, lint, strict type checking, six unit tests, a production build, three browser workflows, and `npm audit --audit-level=high` passed. A browser review confirmed desktop and 390 × 844 layouts, grouped F01/F02 while preserving unique account evidence, and restored the grouping with Undo. Updated desktop screenshot, mobile screenshot, and workflow recording are in ../media. This remains software verification only.
+
+## Proposed five-participant study and scoring protocol
+
+No human study has run. If Northstar moves beyond this portfolio prototype, recruit five consenting B2B SaaS PM or product-operations participants who triage feedback at least monthly. In a 30-minute moderated session with fictional data, ask each person to: find the F01/F02 import-recovery evidence, group it, explain the unique-account count, alter one priority input, and decide whether to mark it Planned. Do not tell them that the tag is simulated until they encounter it; ask what they think it represents and whether it mattered to their decision.
+
+Score each participant on a 0–2 rubric for evidence traceability (can locate both source quotes), score interpretation (can state how impact, confidence, and effort affect direction), decision rationale (ties the selected state to visible evidence), tag clarity (identifies it as a suggestion, not evaluated AI), and recovery (can use Undo after a deliberate change). Record completion time separately. A successful unassisted triage is at least 8/10 with no critical tag-boundary error; the proposed threshold is four of five. Two participants repeating any critical misunderstanding pauses expansion and sends the workflow back to design.
+
+The earlier lint, unit, browser, build, audit, and visual results above remain historical technical results. They validate the prototype’s implementation at the stated time; they are not participant scores, customer research, adoption, or outcome data.
