@@ -2,7 +2,7 @@
 
 Customer feedback is easy to collect and hard to turn into a defensible priority. This B2B SaaS product case study shows how I framed that problem, chose a deliberately constrained workflow, designed fictional sample evidence, and defined a way to evaluate it. The interactive prototype makes those product decisions reviewable.
 
-**Start here:** [Read the case study](docs/product/Case_Study.md) · [Review the PRD and proposed measures](docs/product/PRD.md) · [Try the interactive demo](https://mvahedi2020.github.io/Feedback-Nexus/) · [Watch the workflow](docs/media/workflow.webm)
+**Reviewer route:** [Case study](docs/product/Case_Study.md) → [PRD and acceptance examples](docs/product/PRD.md) → [product decisions](docs/product/Product_Decisions.md) → [discovery and scoring plan](docs/product/Discovery_Plan.md) → [risks and prioritized investment](docs/product/Product_Risks.md). You can also [try the interactive demo](https://mvahedi2020.github.io/Feedback-Nexus/) or [watch the workflow](docs/media/workflow.webm).
 
 ![Feedback Nexus sample workspace](docs/media/screenshot.png)
 
@@ -12,7 +12,7 @@ Northstar, a fictional operations platform, is improving first value. Compare im
 
 ## My product role
 
-I defined the opportunity framing, scope and prioritization choices, requirements, end-to-end workflow, fictional sample-data design, acceptance criteria, and evaluation plan. I chose to preserve source evidence, make the priority inputs inspectable, and offer a rationale for a planning-state change.
+I defined the opportunity framing, scope and prioritization choices, requirements, end-to-end workflow, fictional sample-data design, acceptance criteria, and evaluation plan. I chose to preserve source evidence, make the priority inputs inspectable, and offer a rationale for a planning-state change. This portfolio sample represents Product Manager ownership of the product work, not manual authorship of application code.
 
 Google Antigravity and other AI tools assisted with implementation and verification. This is a personal product case study, not a claim that I managed an engineering team.
 
