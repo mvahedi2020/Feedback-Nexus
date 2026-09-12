@@ -14,7 +14,7 @@ Northstar, a fictional operations platform, is improving first value. Compare im
 
 I defined the opportunity framing, scope and prioritization choices, requirements, end-to-end workflow, fictional sample-data design, acceptance criteria, and evaluation plan. I chose to preserve source evidence, make the priority inputs inspectable, and offer a rationale for a planning-state change. This portfolio sample represents Product Manager ownership of the product work, not manual authorship of application code.
 
-Google Antigravity and other AI tools assisted with implementation and verification. This is a personal product case study, not a claim that I managed an engineering team.
+AI tools assisted with implementation and verification. This is a personal product case study, not a claim that I managed an engineering team.
 
 ## Product decisions
 

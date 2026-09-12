@@ -10,7 +10,7 @@ A B2B SaaS PM prepares a weekly planning discussion. At fictional Northstar, imp
 
 ## My product role
 
-Mo Vahedi's personal case study covers problem definition, priorities, requirements, workflow design and evaluation. Google Antigravity and other AI tools assisted with implementation and verification. This does not represent a staffed product team.
+Mo Vahedi's personal case study covers problem definition, priorities, requirements, workflow design and evaluation. AI tools assisted with implementation and verification. This does not represent a staffed product team.
 
 ## Alternatives and decisions
 
