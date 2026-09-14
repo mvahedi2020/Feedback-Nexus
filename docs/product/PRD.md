@@ -14,6 +14,16 @@ The first release prioritizes traceability over automation. It preserves individ
 
 The sample intentionally excludes CRM ingestion, live customer messaging, collaboration roles, delivery forecasting, model training, and automatic roadmap creation. Browser-only storage keeps the prototype inspectable and low-risk, while also meaning it is not a shared production workspace.
 
+## What the prototype enforces
+
+| Behavior | Enforced now | Recommended product practice |
+|---|---|---|
+| Evidence preservation | Grouping links records without deleting their quotes or source accounts. | Review the original words and segment before making a planning call. |
+| Priority input | Impact is 1–5, confidence is 40/60/80/100%, and effort stays from 0.5–100. | Treat the resulting score as directional, not an automatic rank. |
+| Tag review | A tag can be accepted or edited; a Planned state does not require review. | State in the rationale why an unreviewed suggestion did or did not matter. |
+| Decision state | Inbox, Reviewing, Planned, and Declined are available and persist locally where storage works. | Use Planned as a planning record, not a delivery promise. |
+| Recovery | Undo restores the previous saved change; reset asks before replacing fixtures. | Check the previewed state before reset and export. |
+
 ## Workflow requirements
 
 1. Find relevant signals by customer words, account name, segment, or current planning state.
