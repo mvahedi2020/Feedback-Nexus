@@ -17,3 +17,12 @@ This record makes the choices behind the prototype reviewable. It does not repor
 ## Local prototype boundary
 
 **Alternatives considered:** connect live systems, build collaboration, or keep browser-local storage. **Chosen compromise:** local storage, export, and recovery make the sample inspectable without customer data. **Cost:** no shared record, permissions, or production workflow. **Reconsider when:** validated demand supports explicit privacy, access, retention, integration, and operational decisions.
+
+## Decision reversal rules
+
+| Choice | Reverse only when evidence says | What changes first |
+|---|---|---|
+| Evidence board | At least two consented participants cannot trace F01/F02 sources or prefer a simpler current-method view. | Simplify evidence layout before adding automation. |
+| Unique-account reach | Participants repeatedly misread the union or need a different impact unit. | Test a clearer account presentation; do not add group scoring. |
+| Optional tag review | Participants infer accuracy or find the suggestion irrelevant to a decision. | Remove or relabel the tag before evaluating any assisted workflow. |
+| Browser-local sample | A validated workflow requires sharing or a durable audit record. | Define privacy, access, retention, and recovery requirements before integration. |
