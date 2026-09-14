@@ -56,7 +56,7 @@ Small samples and subjective confidence can mislead. Real customer data would ne
 
 ## Concrete Northstar acceptance examples
 
-In the fictional weekly review, a PM searches **“import”**, selects F01 and F02, and groups them. The result links both records without deleting their quotes. When either linked record is active, its affected-account detail is the unique union of **Alder Labs, Finch Studio, Cedar Systems, and Pineworks**. The PM can edit the active individual record’s impact, confidence, and effort; F01, for example, permits confidence values of 40%, 60%, 80%, or 100%, and its visible score changes from those inputs rather than from a hidden rule.
+In the fictional weekly review, a PM searches **“row”**, selects F01 and F02, and groups them. The result links both records without deleting their quotes. When either linked record is active, its affected-account detail is the unique union of **Alder Labs, Finch Studio, Cedar Systems, and Pineworks**. The PM can edit the active individual record’s impact, confidence, and effort; F01, for example, permits confidence values of 40%, 60%, 80%, or 100%, and its visible score changes from those inputs rather than from a hidden rule.
 
 The PM may move F01 itself to **Planned** and optionally write a rationale such as “Validate import recovery before committing.” A rationale is visible editable context, not a gate, and F01 may become Planned while its simulated **Onboarding** tag remains unreviewed. The tag is supporting context, not a required condition. F04, the saved-report signal, can remain **Inbox** when the PM does not advance it; the available states are Inbox, Reviewing, Planned, and Declined.
 

@@ -17,3 +17,7 @@ Traceability costs time: the PM must inspect evidence and explain a choice. Uniq
 ## Evidence and next investment
 
 Software checks show that the documented workflow and recovery paths ran; they do not show demand, usability, or outcomes. No customer interviews or human study have occurred. The next investment is a five-participant comparison with each person’s current method, using consented fictional data and the published scoring protocol. Expand scope only if participants can trace the source evidence, explain the score and simulated-tag boundary, and make a justified decision without critical misunderstanding. [The walkthrough](Sample%20Walkthrough.md), [PRD](PRD.md), [decisions](Product_Decisions.md), and [validation plan](Validation.md) expose that testable product case.
+
+## My role as Product Manager
+
+I defined the problem, prioritization and scope, workflows, fictional sample data, acceptance criteria, and evaluation plan. AI tools assisted with implementation and verification; I do not claim manual authorship of the application code.
