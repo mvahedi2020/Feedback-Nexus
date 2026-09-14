@@ -22,7 +22,7 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 | Priority input | Impact is 1–5, confidence is 40/60/80/100%, and effort stays from 0.5–100. | Treat the resulting score as directional, not an automatic rank. |
 | Tag review | A tag can be accepted or edited; a Planned state does not require review. | State in the rationale why an unreviewed suggestion did or did not matter. |
 | Decision state | Inbox, Reviewing, Planned, and Declined are available and persist locally where storage works. | Use Planned as a planning record, not a delivery promise. |
-| Recovery | Undo restores the previous saved change; reset asks before replacing fixtures. | Check the previewed state before reset and export. |
+| Recovery | Undo restores the previous saved change; reset asks before replacing fixtures. | Read the reset confirmation and inspect the current shortlist scope before export. |
 
 ## Workflow requirements
 
