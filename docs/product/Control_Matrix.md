@@ -8,11 +8,11 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Filtering | Search | Matches title, quoted feedback, and account names | Empty matches show a clear-filter action |
 | Filtering | Segment and status lists | Combine with search and each other | Clear filters restores the full sample view |
 | Selection | Signal checkboxes | Selects two or more signals for grouping | Group action remains disabled until two are selected |
-| Selection | Group selected | Links selected signals without deleting their quotes or accounts | Undo restores the preceding browser state |
+| Selection | Group selected | Links selected signals without deleting their quotes or accounts; the detail view shows the unique-account union | Scores remain individual and are not added or replaced with a group rank; Undo restores the preceding browser state |
 | Detail | Signal card | Opens the selected evidence and decision record | Data remains local to the browser |
 | Detail | Suggested tag field | Edits the sample tag and returns it to review-needed state | Accept reviewed tag records explicit human review |
 | Detail | Impact, confidence, effort | Recalculates the transparent score | Effort is constrained to 0.5–100; no zero denominator |
-| Detail | Rationale and review status | Stores the decision explanation and moves Planned items into the shortlist | Undo restores the last saved state |
+| Detail | Rationale and review status | Stores optional decision context and moves individual Planned items into the shortlist | Planned is a local planning record, not a delivery promise; Undo restores the last saved state |
 | Detail | Customer update draft | Reveals a sample-only draft | It states that no message is sent |
 | Capture | Add feedback | Requires title, customer words, and a fictional account before saving | Cancel and Escape close the modal; focus remains trapped while open |
 | Export | Export shortlist | Downloads only Planned records as CSV | Spreadsheet-formula-like cells are neutralized; no external upload |
