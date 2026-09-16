@@ -10,6 +10,10 @@ This record makes the choices behind the prototype reviewable. It does not repor
 
 **Alternatives considered:** merge duplicates, count every comment as reach, or retain every signal while showing distinct accounts. **Chosen compromise:** retain originals and use unique affected accounts to avoid inflation. Individual signals keep their scores; group scores are not added. **Cost:** reviewers must distinguish related comments from reach. **Reconsider when:** participants cannot form a decision from grouped evidence or another impact unit proves more meaningful.
 
+## Individual score over a group rank
+
+**Alternatives considered:** calculate a group score from the union, add the scores of linked signals, or keep each source record’s score unchanged. **Chosen compromise:** the prototype leaves F01 and F02 as individual comparisons and uses the four-account union only to inspect reach. **Cost:** the reviewer must synthesize related evidence instead of receiving a single group rank. **Why:** a union says who is represented, not how impact, confidence, or effort should combine. **Reconsider when:** research shows reviewers can explain a defined group-level unit without mistaking it for a source record or automatic decision.
+
 ## Simulated tag suggestions with review
 
 **Alternatives considered:** no suggestion, automatic labels, or a visibly simulated editable suggestion. **Chosen compromise:** show the suggestion and make acceptance or correction an explicit review action, while allowing a planning state without a prerequisite tag review. **Cost:** optional review adds triage time and has no model-accuracy claim. **Reconsider when:** users ignore the tag, mistake it for evaluated AI, or consented evidence justifies separately evaluated assistance.
@@ -24,5 +28,6 @@ This record makes the choices behind the prototype reviewable. It does not repor
 |---|---|---|
 | Evidence board | At least two consented participants cannot trace F01/F02 sources or prefer a simpler current-method view. | Simplify evidence layout before adding automation. |
 | Unique-account reach | Participants repeatedly misread the union or need a different impact unit. | Test a clearer account presentation; do not add group scoring. |
+| Individual scoring | Participants can explain a tested group-level unit and show why it preserves source traceability. | Define the unit, calculation, and reversal behavior before showing any group rank. |
 | Optional tag review | Participants infer accuracy or find the suggestion irrelevant to a decision. | Remove or relabel the tag before evaluating any assisted workflow. |
 | Browser-local sample | A validated workflow requires sharing or a durable audit record. | Define privacy, access, retention, and recovery requirements before integration. |
