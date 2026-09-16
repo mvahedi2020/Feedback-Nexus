@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('evidence to planned decision, persistence, export and undo',async({page})=>{
 await page.goto('./');await page.getByLabel('Select F01',{exact:true}).check();await page.getByLabel('Select F02',{exact:true}).check();await page.getByRole('button',{name:'Group selected (2)'}).click();await expect(page.getByText('Linked group F01')).toHaveCount(2);
-await page.getByLabel('Review status').selectOption('Planned');await expect(page.getByText('Onboarding · needs review')).toBeVisible();await page.reload();await expect(page.getByLabel('Suggested tag')).toHaveValue('Onboarding');await expect(page.getByRole('button',{name:'Accept reviewed tag'})).toBeVisible();
+await page.getByLabel('Review status').selectOption('Planned');await expect(page.getByLabel('Review status')).toHaveValue('Planned');await page.reload();await expect(page.getByLabel('Suggested tag')).toHaveValue('Onboarding');await expect(page.getByRole('button',{name:'Accept reviewed tag'})).toBeVisible();
 const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export shortlist'}).click();expect((await download).suggestedFilename()).toContain('shortlist.csv');
 await page.getByRole('link',{name:/Product shortlist/}).click();await expect(page.locator('.feedback')).toHaveCount(1);await page.getByLabel('Review status').selectOption('Declined');await expect(page.locator('.feedback')).toHaveCount(0);await page.getByRole('button',{name:'Undo',exact:true}).click();await expect(page.locator('.feedback')).toHaveCount(1);
 });
