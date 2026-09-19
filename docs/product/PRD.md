@@ -35,11 +35,11 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 ## Acceptance criteria
 
 - Combined search matches title, customer words and account names; segment and status filters combine.
-- Manual feedback requires nonblank title, quote and account.
+- Manual feedback requires a nonblank title, quote, account, a visible Starter/Growth/Enterprise segment, and a unique local record ID.
 - Grouping two or more signals preserves every quote and shows unique affected accounts.
 - Tags are simulated suggestions. A reviewer may accept or correct a tag explicitly, or record a Planned decision with the suggested tag still unreviewed and explain why in the rationale.
 - Impact, confidence and effort update the score; effort cannot be zero or negative.
-- Rationale and status persist. Planned signals appear in the shortlist and its CSV.
+- Rationale and status persist. Planned signals appear in the shortlist and its CSV in the same descending directional-score order, with record-level accounts and scoring units named explicitly.
 - Undo restores the last change; reset restores fixtures; refresh retains changes when storage works.
 - No interaction contacts customers or writes to an external system.
 
@@ -60,4 +60,4 @@ In the fictional weekly review, a PM searches **“row”**, selects F01 and F02
 
 The PM may move F01 itself to **Planned** and optionally write a rationale such as “Validate import recovery before committing.” A rationale is visible editable context, not a gate, and F01 may become Planned while its simulated **Onboarding** tag remains unreviewed. The tag is supporting context, not a required condition. F04, the saved-report signal, can remain **Inbox** when the PM does not advance it; the available states are Inbox, Reviewing, Planned, and Declined.
 
-A refresh retains the confirmed local sample state where browser storage is available. Undo immediately restores the most recent saved change. Reset opens a restore dialog and its reset action replaces browser changes with the fictional seed data, after which that replacement can be undone. Exported CSV includes individual Planned records and never contacts Northstar customers. These examples define prototype behavior, not a release promise or observed user result.
+A refresh retains the confirmed local sample state where browser storage is available. Undo immediately restores the most recent saved change. Reset opens a restore dialog and its reset action replaces browser changes with the fictional seed data, after which that replacement can be undone. Exported CSV includes individual Planned records ordered by directional score, labels accounts as belonging to the original record, reports the number exported in the interface, and never contacts Northstar customers. These examples define prototype behavior, not a release promise or observed user result.
