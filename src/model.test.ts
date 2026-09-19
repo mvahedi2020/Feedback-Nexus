@@ -9,5 +9,6 @@ it('keeps an existing linked group intact when adding a related signal',()=>{con
 it('does not create a one-record group from invalid selections',()=>{expect(merge(seed,['F01'])).toBe(seed);expect(merge(seed,['missing','F01'])).toBe(seed);});
 it('keeps the import-recovery source accounts and each record score distinct',()=>{const grouped=merge(seed,['F01','F02']);const f01=grouped.find(item=>item.id==='F01')!;expect(f01.accounts).toEqual(['Alder Labs','Finch Studio','Cedar Systems']);expect(groupAccounts(grouped,f01)).toEqual(['Alder Labs','Finch Studio','Cedar Systems','Pineworks']);expect(score({...f01,confidence:.4})).toBe(1.6);});
 it('exports only planned feedback and escapes quotes',()=>{const result=csv([{...seed[0],title:'A "quote"',status:'Planned'},seed[1]]);expect(result).toContain('A ""quote""');expect(result).not.toContain('F02');});
+it('exports planned feedback in the visible score order with explicit units',()=>{const result=csv([{...seed[0],status:'Planned',confidence:.4},{...seed[3],status:'Planned'}]);expect(result).toContain('"Original record accounts","Directional score"');expect(result.indexOf('F04')).toBeLessThan(result.indexOf('F01'));});
 it('never mutates source fixtures',()=>{merge(seed,['F01','F02']);expect(seed[0].group).toBeNull();});
 });
