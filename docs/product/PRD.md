@@ -14,6 +14,8 @@ The first release prioritizes traceability over automation. It preserves individ
 
 The sample intentionally excludes CRM ingestion, live customer messaging, collaboration roles, delivery forecasting, model training, and automatic roadmap creation. Browser-only storage keeps the prototype inspectable and low-risk, while also meaning it is not a shared production workspace.
 
+Account identity is normalized at the comparison boundary: leading and trailing whitespace is removed and case is folded for uniqueness. The first displayed spelling remains the source label. This keeps repeated account mentions from inflating scores, linked-group reach, or exported scope without rewriting the original evidence record.
+
 ## What the prototype enforces
 
 | Behavior | Enforced now | Recommended product practice |
@@ -40,7 +42,9 @@ The sample intentionally excludes CRM ingestion, live customer messaging, collab
 - Tags are simulated suggestions. A reviewer may accept or correct a tag explicitly, or record a Planned decision with the suggested tag still unreviewed and explain why in the rationale.
 - Impact, confidence and effort update the score; effort cannot be zero or negative.
 - Rationale and status persist. Planned signals appear in the shortlist and its CSV in the same descending directional-score order, with record-level accounts and scoring units named explicitly.
+- Repeated account names that differ only by whitespace or case count once in directional scores, linked-account context, and CSV account scope.
 - Undo restores the last change; reset restores fixtures; refresh retains changes when storage works.
+- Invalid saved data remains untouched and blocked from overwrite until the user explicitly confirms Reset sample data.
 - No interaction contacts customers or writes to an external system.
 
 ## Proposed success measures — not observed outcomes
