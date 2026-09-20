@@ -1,6 +1,8 @@
 import {describe,it,expect} from 'vitest';
-import {seed,score,merge,groupAccounts,csv,newFeedbackId,normalizeEffort} from './model';
+import {seed,score,merge,groupAccounts,csv,newFeedbackId,normalizeEffort,uniqueAccounts} from './model';
 describe('evidence and prioritization',()=>{
+it('normalizes account names before counting reach',()=>expect(uniqueAccounts([' Alder Labs','alder labs','Finch Studio '])).toEqual(['Alder Labs','Finch Studio']));
+it('scores unique accounts once when persisted data repeats a customer',()=>expect(score({...seed[0],accounts:['Alder Labs',' alder labs ']})).toBe(1.1));
 it('uses reach, impact, confidence and effort',()=>expect(score(seed[0])).toBe(3.2));
 it('keeps invalid effort input within the supported range',()=>{expect(normalizeEffort(Number.NaN)).toBe(.5);expect(normalizeEffort(0)).toBe(.5);expect(normalizeEffort(120)).toBe(100);});
 it('creates a distinct manual feedback id when timestamps collide',()=>{const first={...seed[0],id:'F123'};expect(newFeedbackId([first],123)).toBe('F123-2');expect(newFeedbackId([first,{...seed[1],id:'F123-2'}],123)).toBe('F123-3');});
