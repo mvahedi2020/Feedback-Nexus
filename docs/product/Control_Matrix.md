@@ -9,6 +9,7 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Filtering | Segment and status lists | Combine with search and each other | Clear filters restores the full sample view |
 | Selection | Signal checkboxes | Selects two or more signals for grouping | Group action remains disabled until two are selected |
 | Selection | Group selected | Links selected signals without deleting their quotes or accounts; the detail view shows the unique-account union | Scores remain individual and are not added or replaced with a group rank; Undo restores the preceding browser state |
+| Account identity | Score, group detail, and export account list | Trims account labels and folds case for uniqueness; the first source spelling is displayed | Original record text remains available; duplicate spellings cannot inflate reach or exported scope |
 | Detail | Signal card | Opens the selected evidence and decision record | Data remains local to the browser |
 | Detail | Suggested tag field | Edits the sample tag and returns it to review-needed state | Accept reviewed tag records explicit human review |
 | Detail | Impact, confidence, effort | Recalculates the transparent score | Effort is constrained to 0.5–100; no zero denominator |
@@ -18,5 +19,5 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Export | Export shortlist | Downloads only Planned records as CSV | Spreadsheet-formula-like cells are neutralized; no external upload |
 | Recovery | Undo | Restores the immediately preceding saved browser state | Disabled with no prior change |
 | Recovery | Reset sample data | Confirms and restores the original fixtures | The preceding state becomes undoable; cancel leaves it intact |
-| Persistence | Browser storage | Restores valid saved sample changes after refresh | A storage warning appears when unavailable or invalid; data remains sample-only |
+| Persistence | Browser storage | Restores valid saved sample changes after refresh | An invalid payload remains untouched and blocks later writes; Reset sample data is the explicit replacement action |
 | Accessibility | Skip link, keyboard controls, focus outlines, dialogs | Enables keyboard navigation and visible focus | Escape closes dialogs; mobile layout avoids horizontal overflow |
