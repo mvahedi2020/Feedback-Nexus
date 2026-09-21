@@ -45,6 +45,8 @@ Account identity is normalized at the comparison boundary: leading and trailing 
 - Repeated account names that differ only by whitespace or case count once in directional scores, linked-account context, and CSV account scope.
 - Undo restores the last change; reset restores fixtures; refresh retains changes when storage works.
 - Invalid saved data remains untouched and blocked from overwrite until the user explicitly confirms Reset sample data.
+- Empty or rejected storage recovery uses an isolated copy of the fictional fixtures, so a session edit cannot mutate the source sample used by a later reset.
+- Saved group references must be nonblank, trimmed labels; ambiguous whitespace is rejected with the rest of the payload rather than silently normalized.
 - No interaction contacts customers or writes to an external system.
 
 ## Proposed success measures — not observed outcomes
