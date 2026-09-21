@@ -30,6 +30,8 @@ Search, segment/status filters, manual submission, duplicate grouping, tag revie
 
 All accounts and feedback are fictional. Tags are simulated; no model or external customer system is connected. Changes stay in your browser. This project is independent of the other Northstar portfolio demonstrations. No measured customer outcomes or completed human research are claimed.
 
+If the browser contains an incompatible saved payload, the sample remains available for inspection while that payload stays blocked from overwrite. Reset sample data is the explicit replacement action; recovered fixtures are isolated from the reference sample, and ambiguous saved group labels are rejected.
+
 ## Review the product work
 
 - [Case study](docs/product/Case_Study.md)
