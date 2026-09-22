@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import {seed,score,merge,groupAccounts,csv,newFeedbackId,normalizeEffort,uniqueAccounts,isFeedback} from './model';
+import {seed,score,merge,groupAccounts,csv,newFeedbackId,normalizeEffort,uniqueAccounts,isFeedback,plannedFeedback} from './model';
 describe('evidence and prioritization',()=>{
 it('normalizes account names before counting reach',()=>expect(uniqueAccounts([' Alder Labs','alder labs','Finch Studio '])).toEqual(['Alder Labs','Finch Studio']));
 it('scores unique accounts once when persisted data repeats a customer',()=>expect(score({...seed[0],accounts:['Alder Labs',' alder labs ']})).toBe(1.1));
@@ -12,6 +12,7 @@ it('does not create a one-record group from invalid selections',()=>{expect(merg
 it('keeps the import-recovery source accounts and each record score distinct',()=>{const grouped=merge(seed,['F01','F02']);const f01=grouped.find(item=>item.id==='F01')!;expect(f01.accounts).toEqual(['Alder Labs','Finch Studio','Cedar Systems']);expect(groupAccounts(grouped,f01)).toEqual(['Alder Labs','Finch Studio','Cedar Systems','Pineworks']);expect(score({...f01,confidence:.4})).toBe(1.6);});
 it('exports only planned feedback and escapes quotes',()=>{const result=csv([{...seed[0],title:'A "quote"',status:'Planned'},seed[1]]);expect(result).toContain('A ""quote""');expect(result).not.toContain('F02');});
 it('exports planned feedback in the visible score order with explicit units',()=>{const result=csv([{...seed[0],status:'Planned',confidence:.4},{...seed[3],status:'Planned'}]);expect(result).toContain('"Original record accounts","Directional score"');expect(result.indexOf('F04')).toBeLessThan(result.indexOf('F01'));});
+it('derives a stable planned review set without changing source order',()=>{const result=plannedFeedback([{...seed[0],status:'Planned',confidence:.4},{...seed[3],status:'Planned'},seed[1]]);expect(result.map(item=>item.id)).toEqual(['F04','F01']);expect(seed[0].status).toBe('Inbox');});
 it('never mutates source fixtures',()=>{merge(seed,['F01','F02']);expect(seed[0].group).toBeNull();});
 it('requires persisted ids and tags to be usable source labels',()=>{expect(isFeedback({...seed[0],id:' F01 '})).toBe(false);expect(isFeedback({...seed[0],tag:' '})).toBe(false);});
 });
