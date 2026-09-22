@@ -30,3 +30,8 @@ For comparable sessions, split the five participants so the first participant be
 Use these anchors consistently. For evidence traceability, 2 means the participant independently finds both original import quotes and the four-account union; 1 means they find part of that evidence or need help; 0 means they cannot locate it. For score interpretation, 2 means they can state how the selected input changes the directional comparison; 1 means they name an input without the relationship; 0 means they treat the score as an automatic answer. For rationale, 2 ties the state to visible evidence; 1 gives a preference without evidence; 0 gives no reason. For tag clarity, 2 identifies a simulated editable suggestion, 1 notices it but is unsure of its role, and 0 infers evaluated or automatic assistance. For recovery, 2 independently uses Undo after a deliberate change, 1 does so with help, and 0 cannot restore the change.
 
 The earlier lint, unit, browser, build, audit, and visual results above remain historical technical results. They validate the prototype’s implementation at the stated time; they are not participant scores, customer research, adoption, or outcome data.
+# September 21 review additions
+
+The walkthrough should verify the announced export scope: place one signal in `Planned`, leave inbox and declined signals untouched, export, and confirm the downloaded CSV contains only the planned record. Reviewers should also confirm that the notice describes the local, fictional boundary.
+
+Recovery validation remains bounded to this browser. Seed reset, undo, and incompatible saved data checks demonstrate interaction behavior; they do not establish account recovery, cloud persistence, or production customer-data handling.
