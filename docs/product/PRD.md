@@ -67,3 +67,8 @@ In the fictional weekly review, a PM searches **“row”**, selects F01 and F02
 The PM may move F01 itself to **Planned** and optionally write a rationale such as “Validate import recovery before committing.” A rationale is visible editable context, not a gate, and F01 may become Planned while its simulated **Onboarding** tag remains unreviewed. The tag is supporting context, not a required condition. F04, the saved-report signal, can remain **Inbox** when the PM does not advance it; the available states are Inbox, Reviewing, Planned, and Declined.
 
 A refresh retains the confirmed local sample state where browser storage is available. Undo immediately restores the most recent saved change. Reset opens a restore dialog and its reset action replaces browser changes with the fictional seed data, after which that replacement can be undone. Exported CSV includes individual Planned records ordered by directional score, labels accounts as belonging to the original record, reports the number exported in the interface, and never contacts Northstar customers. These examples define prototype behavior, not a release promise or observed user result.
+# Interaction contract: shortlist review
+
+The shortlist is a proposal layer. A reviewer can move a signal to `Planned`, inspect the original quote and affected accounts, record rationale, and export the planned set for local review. Export scope must be explicit: inbox and declined records are excluded, and no message is sent.
+
+Reset returns the browser to the fictional seed after confirmation. Undo applies only to the most recent saved edit. These controls are intentionally local and do not claim identity-backed recovery.
