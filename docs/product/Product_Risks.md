@@ -17,3 +17,10 @@ These are decision risks to watch for in proposed research and future product wo
 | Convenience scope displaces the decision problem | Requests center on imports, dashboards, or automation before core comprehension | Use the Discovery Plan as a gate: invest after evidence that the explainable decision workflow is understood and valued. |
 
 Review these signals after each proposed study. A repeated signal changes the next product decision; it does not establish demand or production readiness.
+# Current integrity risks
+
+* A local export can be mistaken for an operational customer handoff if its scope is not read alongside the shortlist state.
+* Reset and undo prove reversible browser interactions only; they do not recover data across devices or authenticated accounts.
+* Fictional evidence and simulated tag suggestions must remain visibly separate from measured customer research and model output.
+
+Mitigation: keep action announcements, source labels, and the case-study boundary adjacent to the workflow, then test the behavior with mixed statuses.
