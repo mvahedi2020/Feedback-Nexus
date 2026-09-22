@@ -22,3 +22,10 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Persistence | Browser storage | Restores valid saved sample changes after refresh | An invalid payload remains untouched and blocks later writes; empty or rejected recovery uses an isolated fixture copy; Reset sample data is the explicit replacement action |
 | Persistence | Saved group identity | Accepts only nonblank, trimmed group labels that can be resolved to saved IDs | Whitespace-padded or unknown group references reject the payload rather than silently changing evidence links |
 | Accessibility | Skip link, keyboard controls, focus outlines, dialogs | Enables keyboard navigation and visible focus | Escape closes dialogs; mobile layout avoids horizontal overflow |
+# Reviewable local actions
+
+| Control | User-visible behavior | Evidence boundary |
+| --- | --- | --- |
+| Shortlist export | Announces that only `Planned` records are included and downloads a local CSV. | Export is a review artifact; it does not send customer data or imply delivery. |
+| Reset sample data | Requires an explicit confirmation and restores the fictional seed. | Browser state is replaced locally; no remote workspace is changed. |
+| Saved feedback | Rejects malformed or ambiguous records before they become editable. | Incompatible local data remains blocked until the user resets it. |
