@@ -19,7 +19,7 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Export | Export shortlist | Downloads only Planned records as CSV with record provenance, account scope, scoring inputs, and rationale | Spreadsheet-formula-like cells are neutralized; no external upload |
 | Recovery | Undo | Restores the immediately preceding saved browser state | Disabled with no prior change |
 | Recovery | Reset sample data | Confirms and restores the original fixtures | The preceding state becomes undoable; cancel leaves it intact |
-| Persistence | Browser storage | Restores valid saved sample changes after refresh | An invalid payload remains untouched and blocks later writes; empty or rejected recovery uses an isolated fixture copy; Reset sample data is the explicit replacement action |
+| Persistence | Browser storage | Restores valid saved sample changes after refresh | An invalid payload, including non-integer impact values outside the visible control, remains untouched and blocks later writes; empty or rejected recovery uses an isolated fixture copy; Reset sample data is the explicit replacement action |
 | Persistence | Saved group identity | Accepts only nonblank, trimmed group labels that can be resolved to saved IDs | Whitespace-padded or unknown group references reject the payload rather than silently changing evidence links |
 | Accessibility | Skip link, keyboard controls, focus outlines, dialogs | Enables keyboard navigation and visible focus | Escape closes dialogs; mobile layout avoids horizontal overflow |
 # Reviewable local actions
