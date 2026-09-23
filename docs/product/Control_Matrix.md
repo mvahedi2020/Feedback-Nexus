@@ -5,7 +5,7 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Area | Control | Expected behavior | Recovery / boundary |
 |---|---|---|---|
 | Navigation | Feedback inbox, Product shortlist, Decision method, brand | Changes the hash view; the active location is exposed to assistive technology | Browser back/forward works; no network navigation is required |
-| Filtering | Search | Matches title, quoted feedback, and account names | Empty matches show a clear-filter action |
+| Filtering | Search | Matches title, quoted feedback, account names, tags, and recorded rationale | Empty matches show a clear-filter action |
 | Filtering | Segment and status lists | Combine with search and each other | Clear filters restores the full sample view |
 | Selection | Signal checkboxes | Selects two or more signals for grouping | Group action remains disabled until two are selected |
 | Selection | Group selected | Links selected signals without deleting their quotes or accounts; the detail view shows the unique-account union | Scores remain individual and are not added or replaced with a group rank; Undo restores the preceding browser state |
@@ -16,7 +16,7 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Detail | Rationale and review status | Stores optional decision context and moves individual Planned items into the shortlist | Planned is a local planning record, not a delivery promise; Undo restores the last saved state |
 | Detail | Customer update draft | Reveals a sample-only draft | It states that no message is sent |
 | Capture | Add feedback | Requires title, customer words, and a fictional account before saving | Cancel and Escape close the modal; focus remains trapped while open |
-| Export | Export shortlist | Downloads only Planned records as CSV | Spreadsheet-formula-like cells are neutralized; no external upload |
+| Export | Export shortlist | Downloads only Planned records as CSV with record provenance, account scope, scoring inputs, and rationale | Spreadsheet-formula-like cells are neutralized; no external upload |
 | Recovery | Undo | Restores the immediately preceding saved browser state | Disabled with no prior change |
 | Recovery | Reset sample data | Confirms and restores the original fixtures | The preceding state becomes undoable; cancel leaves it intact |
 | Persistence | Browser storage | Restores valid saved sample changes after refresh | An invalid payload remains untouched and blocks later writes; empty or rejected recovery uses an isolated fixture copy; Reset sample data is the explicit replacement action |

@@ -36,12 +36,12 @@ Account identity is normalized at the comparison boundary: leading and trailing 
 
 ## Acceptance criteria
 
-- Combined search matches title, customer words and account names; segment and status filters combine.
+- Combined search matches title, customer words, account names, tags, and recorded rationale; segment and status filters combine.
 - Manual feedback requires a nonblank title, quote, account, a visible Starter/Growth/Enterprise segment, and a unique local record ID.
 - Grouping two or more signals preserves every quote and shows unique affected accounts.
 - Tags are simulated suggestions. A reviewer may accept or correct a tag explicitly, or record a Planned decision with the suggested tag still unreviewed and explain why in the rationale.
 - Impact, confidence and effort update the score; effort cannot be zero or negative.
-- Rationale and status persist. Planned signals appear in the shortlist and its CSV in the same descending directional-score order, with record-level accounts and scoring units named explicitly.
+- Rationale and status persist. Planned signals appear in the shortlist and its CSV in the same descending directional-score order, with record-level accounts, source provenance, scoring inputs, and scoring units named explicitly.
 - Repeated account names that differ only by whitespace or case count once in directional scores, linked-account context, and CSV account scope.
 - Undo restores the last change; reset restores fixtures; refresh retains changes when storage works.
 - Invalid saved data remains untouched and blocked from overwrite until the user explicitly confirms Reset sample data.
