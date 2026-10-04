@@ -3,3 +3,6 @@
 
 /* Keep the primary action in reading order when a narrow screen cannot fit it beside the headline. */
 @media(max-width:480px){.hero{flex-direction:column;align-items:stretch}.hero>.primary{align-self:flex-start}}
+
+/* Clear the desktop fourth-column placement when the filter toolbar becomes two columns. */
+@media(max-width:720px){.toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar button:last-child{grid-column:auto}.toolbar>*{min-width:0}}

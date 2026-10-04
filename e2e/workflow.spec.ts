@@ -17,7 +17,9 @@ for (const width of [320,390]) {
     const action=page.getByRole('button',{name:'Add feedback'});
     await expect(action).toBeVisible();const box=await action.boundingBox();expect(box).not.toBeNull();
     expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.x+box!.width).toBeLessThanOrEqual(width);
-    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    const toolbar=await page.locator('.toolbar').boundingBox();const undo=await page.getByRole('button',{name:'Undo',exact:true}).boundingBox();
+    expect(undo!.x+undo!.width).toBeLessThanOrEqual(toolbar!.x+toolbar!.width+1);
     await action.click();await expect(page.getByRole('dialog')).toBeVisible();
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   });
