@@ -10,3 +10,15 @@ test('a planning decision does not require tag review',async({page})=>{await pag
 test('does not group a signal that a filter has hidden',async({page})=>{await page.goto('./');await page.getByLabel('Select F01',{exact:true}).check();await page.getByLabel('Select F02',{exact:true}).check();await page.getByLabel('Search feedback',{exact:true}).fill('exactly where');const group=page.getByRole('button',{name:'Group selected (1)'});await expect(group).toBeDisabled();await page.getByLabel('Search feedback',{exact:true}).fill('');await expect(page.getByRole('button',{name:'Group selected (2)'})).toBeEnabled();});
 test('shows the filtered signal in the detail panel',async({page})=>{await page.goto('./');await page.getByLabel('Search feedback',{exact:true}).fill('weekly operations report');const detail=page.getByRole('region',{name:'Feedback detail'});await expect(detail.getByRole('heading',{name:'Save the weekly operations report'})).toBeVisible();await expect(detail.getByRole('heading',{name:'Show exactly where an import failed'})).toHaveCount(0);});
 test('mobile search and unavailable storage',async({page})=>{await page.setViewportSize({width:390,height:844});await page.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw Error('blocked')}}));await page.goto('./');await expect(page.getByRole('status')).toContainText('unavailable');await page.getByLabel('Search feedback',{exact:true}).fill('not found');await expect(page.getByText('No matching feedback')).toBeVisible();await page.getByRole('button',{name:'Clear filters'}).click();await expect(page.locator('.feedback')).toHaveCount(6);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);});
+
+for (const width of [320,390]) {
+  test(`keeps the feedback entry action inside a ${width}px screen`,async({page})=>{
+    await page.setViewportSize({width,height:844});await page.goto('./');
+    const action=page.getByRole('button',{name:'Add feedback'});
+    await expect(action).toBeVisible();const box=await action.boundingBox();expect(box).not.toBeNull();
+    expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.x+box!.width).toBeLessThanOrEqual(width);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await action.click();await expect(page.getByRole('dialog')).toBeVisible();
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  });
+}
