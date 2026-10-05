@@ -18,6 +18,8 @@ Traceability costs time: the PM must inspect evidence and explain a choice. Uniq
 
 Software checks show that the documented workflow and recovery paths ran; they do not show demand, usability, or outcomes. No customer interviews or human study have occurred. The next investment is a five-participant comparison with each person’s current method, using consented fictional data and the published scoring protocol. Expand scope only if participants can trace the source evidence, explain the score and simulated-tag boundary, and make a justified decision without critical misunderstanding. [The walkthrough](Sample%20Walkthrough.md), [PRD](PRD.md), [decisions](Product_Decisions.md), and [validation plan](Validation.md) expose that testable product case.
 
+Before adding ingestion or automatic classification, test whether source-preserving review changes the quality of a planning decision compared with the current spreadsheet or backlog. Ask why import recovery should outrank saved reporting and what evidence could reverse that choice. Account reach omits revenue, urgency and support burden, so a higher score alone cannot justify investment. If reviewers still follow the rank without challenging confidence or effort, simplify the scoring emphasis. Commercial discovery must separately establish whether the review benefit exceeds the work of maintaining the evidence board.
+
 ## My role as Product Manager
 
 I defined the problem, prioritization and scope, workflows, fictional sample data, acceptance criteria, and evaluation plan. AI tools assisted with implementation and verification; I do not claim manual authorship of the application code.

@@ -6,6 +6,8 @@ Customer feedback is easy to collect and hard to turn into a defensible priority
 
 ![Feedback Nexus sample workspace](docs/media/screenshot.png)
 
+Product tradeoff: preserve source evidence and make scoring challengeable even when review takes longer. The next investment depends on decision quality relative to the current backlog, including commercial factors that account reach omits. See the [case study](docs/product/Case_Study.md) for the proposed comparison and investment criteria.
+
 ## Try this decision
 
 Northstar, a fictional operations platform, is improving first value. Compare import recovery with saved reports. Group F01 and F02, review the suggested tag, adjust effort, record your reasoning, and move a signal to Planned. Export the shortlist or undo your decision.
