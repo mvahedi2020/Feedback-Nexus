@@ -11,7 +11,7 @@ All records, accounts, and outputs are fictional samples. No control sends custo
 | Selection | Group selected | Links selected signals without deleting their quotes or accounts; the detail view shows the unique-account union | Scores remain individual and are not added or replaced with a group rank; Undo restores the preceding browser state |
 | Account identity | Score, group detail, and export account list | Trims account labels and folds case for uniqueness; the first source spelling is displayed | Original record text remains available; duplicate spellings cannot inflate reach or exported scope |
 | Detail | Signal card | Opens the selected evidence and decision record | Data remains local to the browser |
-| Detail | Suggested tag field | Edits the sample tag and returns it to review-needed state | Accept reviewed tag records explicit human review |
+| Detail | Suggested tag field | Keeps typing in a draft; saves nonblank tag edits when the field loses focus and returns the tag to review-needed state | Blank or whitespace drafts show feedback and preserve the last valid tag; Accept reviewed tag records explicit human review |
 | Detail | Impact, confidence, effort | Recalculates the transparent score | Effort is constrained to 0.5–100; no zero denominator |
 | Detail | Rationale and review status | Stores optional decision context and moves individual Planned items into the shortlist | Planned is a local planning record, not a delivery promise; Undo restores the last saved state |
 | Detail | Customer update draft | Reveals a sample-only draft | It states that no message is sent |

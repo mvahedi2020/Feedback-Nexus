@@ -39,6 +39,7 @@ Account identity is normalized at the comparison boundary: leading and trailing 
 - Combined search matches title, customer words, account names, tags, and recorded rationale; segment and status filters combine.
 - Manual feedback requires a nonblank title, quote, account, a visible Starter/Growth/Enterprise segment, and a unique local record ID.
 - Grouping two or more signals preserves every quote and shows unique affected accounts.
+- Tag text is drafted while typing and a nonblank edit saves on leaving the field. Blank or whitespace drafts show feedback, cannot be accepted, and leave the last valid saved tag and the rest of the board intact.
 - Tags are simulated suggestions. A reviewer may accept or correct a tag explicitly, or record a Planned decision with the suggested tag still unreviewed and explain why in the rationale.
 - Impact, confidence and effort update the score; effort cannot be zero or negative.
 - Rationale and status persist. Planned signals appear in the shortlist and its CSV in the same descending directional-score order, with record-level accounts, source provenance, scoring inputs, and scoring units named explicitly.
