@@ -43,3 +43,7 @@ If the browser contains an incompatible saved payload, the sample remains availa
 - [Prototype validation](docs/product/Validation.md)
 - [Exhaustive interaction and recovery matrix](docs/product/Control_Matrix.md)
 - [Contributor setup](CONTRIBUTING.md)
+
+## Read the product documents
+
+[Open the formatted document index](https://mvahedi2020.github.io/Feedback-Nexus/docs/index.html) for the case study, walkthrough, requirements, and supporting product work. Markdown files remain the source documents.
