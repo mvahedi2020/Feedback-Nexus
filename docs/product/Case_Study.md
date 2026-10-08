@@ -1,5 +1,9 @@
 # Feedback Nexus — decision brief
 
+Compare customer feedback while keeping the original quotes and affected accounts visible. Record why one problem deserves attention before choosing what to work on.
+
+**The product choice:** Use scores to support a discussion while keeping the source evidence open to challenge. [Try the sample](https://mvahedi2020.github.io/Feedback-Nexus/) · [Follow the walkthrough](Sample%20Walkthrough.md).
+
 ## User and problem
 
 A B2B SaaS PM preparing a planning discussion needs to compare customer feedback without losing the original words or account context. In the fictional Northstar workspace, import recovery and saved reporting compete for attention. The product question is whether a reviewer can inspect the evidence behind a planning recommendation rather than inherit an unexplained rank.

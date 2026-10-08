@@ -1,6 +1,8 @@
 # Feedback Nexus — Product Management Case Study
 
-Customer feedback is easy to collect and hard to turn into a defensible priority. This B2B SaaS product case study shows how I framed that problem, chose a deliberately constrained workflow, designed fictional sample evidence, and defined a way to evaluate it. The interactive prototype makes those product decisions reviewable.
+Compare customer feedback while keeping the original quotes and affected accounts visible. Record why one problem deserves attention before choosing what to work on. All records in this demo are fictional.
+
+**Try it:** Search for import, compare the related feedback, and record a planning decision. [Open the demo](https://mvahedi2020.github.io/Feedback-Nexus/) · [Follow the walkthrough](docs/product/Sample%20Walkthrough.md).
 
 **Reviewer route:** [Decision brief](docs/product/Case_Study.md) → [sample walkthrough](docs/product/Sample%20Walkthrough.md) → [PRD and acceptance examples](docs/product/PRD.md) → [measurement and validation plan](docs/product/Measurement_Plan.md) → [product decisions](docs/product/Product_Decisions.md). You can also [try the interactive demo](https://mvahedi2020.github.io/Feedback-Nexus/) or [watch the workflow](docs/media/workflow.webm).
 
