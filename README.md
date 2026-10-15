@@ -4,6 +4,8 @@ Compare customer feedback while keeping the original quotes and affected account
 
 **Try it:** Search for import, compare the related feedback, and record a planning decision. [Open the demo](https://mvahedi2020.github.io/Feedback-Nexus/) · [Follow the walkthrough](docs/product/Sample%20Walkthrough.md).
 
+**Experience connection:** My work on product requirements, customer requests and roadmap priorities has required separating a requested feature from the underlying problem. [Read the decision to challenge](docs/product/Case_Study.md#experience-and-decision).
+
 **Reviewer route:** [Decision brief](docs/product/Case_Study.md) → [sample walkthrough](docs/product/Sample%20Walkthrough.md) → [PRD and acceptance examples](docs/product/PRD.md) → [measurement and validation plan](docs/product/Measurement_Plan.md) → [product decisions](docs/product/Product_Decisions.md). You can also [try the interactive demo](https://mvahedi2020.github.io/Feedback-Nexus/) or [watch the workflow](docs/media/workflow.webm).
 
 ![Feedback Nexus sample workspace](docs/media/screenshot.png)

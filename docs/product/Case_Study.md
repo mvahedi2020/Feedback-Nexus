@@ -4,6 +4,12 @@ Compare customer feedback while keeping the original quotes and affected account
 
 **The product choice:** Use scores to support a discussion while keeping the source evidence open to challenge. [Try the sample](https://mvahedi2020.github.io/Feedback-Nexus/) · [Follow the walkthrough](Sample%20Walkthrough.md).
 
+## Experience and decision
+
+My work on product requirements, customer requests and roadmap priorities has required separating a requested feature from the underlying problem. This is a separate fictional portfolio exercise; its records, rules and results do not reproduce an employer system.
+
+**Decision to challenge:** When should a lower-scoring problem take priority? The reviewer needs to weigh the source evidence, confidence and strategic context rather than let the score make the roadmap decision.
+
 ## User and problem
 
 A B2B SaaS PM preparing a planning discussion needs to compare customer feedback without losing the original words or account context. In the fictional Northstar workspace, import recovery and saved reporting compete for attention. The product question is whether a reviewer can inspect the evidence behind a planning recommendation rather than inherit an unexplained rank.
