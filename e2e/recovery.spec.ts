@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+import {seed} from '../src/model';
 test('incomplete saved records show a warning and usable fixtures',async({page})=>{await page.addInitScript(()=>localStorage.setItem('mo-feedback-nexus-v1',JSON.stringify([{id:'F1',title:'x',accounts:[],status:'Inbox',effort:1,quote:'q'}])));await page.goto('./');await expect(page.getByRole('status')).toContainText('incompatible');await expect(page.locator('.feedback')).toHaveCount(6);});
 test('cancelled reset preserves changes and confirmed reset is undoable',async({page})=>{await page.goto('./');await page.getByLabel('Review status').selectOption('Planned');await page.getByRole('button',{name:'Reset sample data'}).click();await page.getByRole('button',{name:'Cancel'}).click();await expect(page.getByLabel('Review status')).toHaveValue('Planned');await page.getByRole('button',{name:'Reset sample data'}).click();await page.getByRole('button',{name:'Reset sample data'}).last().click();await expect(page.getByLabel('Review status')).toHaveValue('Inbox');await page.getByRole('button',{name:'Undo',exact:true}).click();await expect(page.getByLabel('Review status')).toHaveValue('Planned');});
 
@@ -64,3 +65,16 @@ for (const method of ['pointer', 'keyboard']) {
     await expect(page.getByRole('button', { name: 'Tag reviewed ✓', exact: true })).toBeDisabled()
   })
 }
+
+test('restored duplicate account labels agree across the signal card and evidence detail', async ({ page }) => {
+  const items = seed.map(item => ({ ...item, accounts: item.id === 'F01' ? [' Alder Labs ', 'alder labs', 'Finch Studio'] : [...item.accounts] }))
+  await page.addInitScript((saved) => {
+    localStorage.setItem('mo-feedback-nexus-v1', JSON.stringify(saved))
+  }, items)
+  await page.goto('./')
+  const signal = page.locator('.feedback').filter({ has: page.getByRole('heading', { name: 'Show exactly where an import failed', exact: true }) })
+  await expect(signal.locator('.meta')).toContainText('2 accounts')
+  await expect(signal.locator('.score strong')).toHaveText('2.1')
+  await expect(page.getByLabel('Feedback detail')).toContainText('Alder Labs, Finch Studio')
+  await expect(page.getByRole('status')).not.toContainText('incompatible')
+})
